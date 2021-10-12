@@ -16,4 +16,4 @@ az sql server firewall-rule create --name AllowLocalClient --server testserver10
 az sql db create --resource-group testResourceGroup --server testserver10017868 --name testDB --service-objective S0
 az sql db show-connection-string --client ado.net --server testserver10017868 --name testDB
 
-Server=tcp:testserver10017868.database.windows.net,1433;Database=testDB;User ID=testadmin;Password=tTzWSRt8kH9A#v4#;Encrypt=true;Connection Timeout=30;
+Server=tcp:testserver10017868.database.windows.net,1433;Database=testDB;User ID=testadmin;Password=tTzWSRt8kH9A#v4#;Encrypt=true;Connection Timeout=30

@@ -1,0 +1,25 @@
+# Delete old migrations
+rm -r Migrations
+
+# Recreate migrations with UseSqlServer (see previous snippet)
+dotnet ef migrations add InitialCreate
+
+# Set connection string to production database
+# PowerShell
+$env:ConnectionStrings:MyDbConnection="Server=tcp:testserver10017868.database.windows.net,1433;Database=testDB;User ID=testadmin;Password=tTzWSRt8kH9A#v4#;Encrypt=true;Connection Timeout=30"
+
+# CMD (no quotes)
+set ConnectionStrings:MyDbConnection=Server=tcp:testserver10017868.database.windows.net,1433;Database=testDB;User ID=testadmin;Password=tTzWSRt8kH9A#v4#;Encrypt=true;Connection Timeout=30
+
+# Bash (no quotes)
+export ConnectionStrings__MyDbConnection=Server=tcp:testserver10017868.database.windows.net,1433;Database=testDB;User ID=testadmin;Password=tTzWSRt8kH9A#v4#;Encrypt=true;Connection Timeout=30
+
+# Run migrations
+dotnet ef database update
+
+
+FTP and local Git can deploy to an Azure web app by using a deployment user.
+username
+10017868
+password
+!T\s!c2bTjYNCEDb
