@@ -1,0 +1,8 @@
+In this tutorial, you learn how to:
+
+Create a SQL Database in Azure
+Connect an ASP.NET Core app to SQL Database
+Deploy the app to Azure
+Update the data model and redeploy the app
+Stream diagnostic logs from Azure
+Manage the app in the Azure portal
