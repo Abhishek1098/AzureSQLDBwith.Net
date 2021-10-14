@@ -22,4 +22,15 @@ FTP and local Git can deploy to an Azure web app by using a deployment user.
 username
 10017868
 password
-!T\s!c2bTjYNCEDb
+79v4QQcNZ
+
+
+"deploymentLocalGitUrl": "https://10017868@testapp10017868.scm.azurewebsites.net/testapp10017868.git
+
+az webapp config connection-string set --resource-group testResourceGroup --name testApp10017868 --settings MyDbConnection='Server=tcp:testserver10017868.database.windows.net,1433;Database=testDB;User ID=testadmin;Password=tTzWSRt8kH9A#v4#;Encrypt=true;Connection Timeout=30' --connection-string-type SQLAzure
+
+az webapp config appsettings set --name testapp10017868 --resource-group testResourceGroup --settings DEPLOYMENT_BRANCH='main'
+
+git remote add azure https://10017868@testapp10017868.scm.azurewebsites.net/testapp10017868.git
+
+http://testapp10017868.azurewebsites.net
